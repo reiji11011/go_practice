@@ -1,8 +1,6 @@
 package main
 
-import (
-	"myapp/databasesql"
-)
+import "myapp/gorp"
 
 type Test struct {
 	Title string
@@ -25,7 +23,8 @@ func main() {
 	//_ = literal.Test()
 	//_ = arrays.Test()
 	//_ = slices.Test()
-	_ = databasesql.Test()
+	//_ = databasesql.Test()
+	_ = gorptest.Test()
 }
 
 func NewTest(title string, page int) *Test {
