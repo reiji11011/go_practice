@@ -11,8 +11,5 @@ SQLite3 導入
 brew install sqlite
 ```
 
-ビルドと実行
-```go
-go build sqlite.go
-./sqlite
-```
+# 参考
+https://github.com/go-gorp/gorp
