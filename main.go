@@ -1,7 +1,7 @@
 package main
 
 import (
-	"myapp/volatiletech"
+	"myapp/control"
 )
 
 type Test struct {
@@ -27,7 +27,13 @@ func main() {
 	//_ = slices.Test()
 	//_ = databasesql.Test()
 	//_ = gorptest.Test()
-	_ = volatiletech.Test()
+	//_ = volatiletech.Test()
+	//_ = loop.Test()
+	//_ = sort.Test()
+	//_ = _map.Test()
+	//_ = gotest.Test()
+	//_ = testify.Test()
+	_ = control.Test()
 }
 
 func NewTest(title string, page int) *Test {
