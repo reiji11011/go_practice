@@ -30,6 +30,17 @@ func Test() string {
 		fmt.Println("20より大きいです。")
 	}
 
+	isBook := false
+	if isBook == true {
+		fmt.Println("trueです")
+	}
+	if isBook {
+		fmt.Println("trueです")
+	}
+	if !isBook {
+		fmt.Println("falseです")
+	}
+
 	// for
 	fmt.Println("for")
 	s := []int32{1, 2, 3, 4, 5}

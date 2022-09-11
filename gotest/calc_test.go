@@ -1,6 +1,8 @@
 package gotest
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestCalc(t *testing.T) {
 	got := Calc(1, 3)
@@ -17,4 +19,14 @@ func BenchmarkCalc(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		Calc(1, 2)
 	}
+}
+
+func TestGreet(t *testing.T) {
+	// 以下のようにテストは書けない。
+	//want := "Hello! Tanaka"
+	//got := Greet("Tanaka")
+	// => used as a value, but it returns nothing
+	//if want != got {
+	//	fmt.Printf("got %s, want %s", got, want)
+	//}
 }

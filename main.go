@@ -1,7 +1,7 @@
 package main
 
 import (
-	"myapp/control"
+	"myapp/function"
 )
 
 type Test struct {
@@ -33,7 +33,11 @@ func main() {
 	//_ = _map.Test()
 	//_ = gotest.Test()
 	//_ = testify.Test()
-	_ = control.Test()
+	//_ = control.Test()
+	//_ = linter.Test()
+	//_ = os.Test()
+	//io.Test()
+	function.Test()
 }
 
 func NewTest(title string, page int) *Test {
