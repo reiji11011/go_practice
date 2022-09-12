@@ -1,8 +1,6 @@
 package main
 
-import (
-	"myapp/function"
-)
+import err "myapp/error"
 
 type Test struct {
 	Title string
@@ -37,7 +35,10 @@ func main() {
 	//_ = linter.Test()
 	//_ = os.Test()
 	//io.Test()
-	function.Test()
+	//function.Test()
+	//bytes.Test()
+	err.Test()
+	gomock.Test()
 }
 
 func NewTest(title string, page int) *Test {
