@@ -1,3 +1,5 @@
 package gomock
 
-func Test() {}
+type Foo interface {
+	Bar(x int) int
+}

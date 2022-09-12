@@ -1,6 +1,9 @@
 package main
 
-import err "myapp/error"
+import (
+	"myapp/gomock"
+	_type "myapp/type"
+)
 
 type Test struct {
 	Title string
@@ -37,7 +40,8 @@ func main() {
 	//io.Test()
 	//function.Test()
 	//bytes.Test()
-	err.Test()
+	//err.Test()
+	_type.Test()
 	gomock.Test()
 }
 
