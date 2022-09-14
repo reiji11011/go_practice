@@ -1,9 +1,6 @@
 package main
 
-import (
-	"myapp/gomock"
-	_type "myapp/type"
-)
+import "myapp/json"
 
 type Test struct {
 	Title string
@@ -41,9 +38,18 @@ func main() {
 	//function.Test()
 	//bytes.Test()
 	//err.Test()
-	_type.Test()
-	gomock.Test()
+	//_type.Test()
+	json.Test()
 }
+
+//func (i int)Test1()  {
+//	fmt.Println("組み込み型はメソッドを持てない")
+//}
+
+//type integer int
+//func (i integer)Test1()  {
+//	fmt.Println("組み込み型はメソッドを持てない")
+//}
 
 func NewTest(title string, page int) *Test {
 	return &Test{
