@@ -11,7 +11,7 @@ import (
 	"gopkg.in/gorp.v1"
 )
 
-func Test() string {
+func Test() {
 	dbmap := initDb()
 	fmt.Println(dbmap)
 	// *sql.DBのCloseメソッドで処理終了後にコネクションを閉じるようにする。
@@ -41,7 +41,7 @@ func Test() string {
 	}
 	log.Println("Rows after inserting:", count)
 
-	return "finish"
+	// プレースホルダーを渡して変数の中身によって取得する情報を変更する。
 }
 
 type Post struct {

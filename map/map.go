@@ -1,6 +1,12 @@
 package _map
 
-import "fmt"
+import (
+	"fmt"
+)
+
+type Children struct {
+	Character map[string]string
+}
 
 func Test() string {
 	fmt.Println("")
@@ -70,6 +76,31 @@ func Test() string {
 	// 構造体をキーにする
 	m11 := map[Number]Number{}
 	fmt.Println(m11)
+
+	// 初期化
+	_ = Children{
+		//Character: {"主観": "論理的"},
+		Character: map[string]string{"主観": "論理的"},
+	}
+
+	// ファイルへマップの吐き出し
+	fmt.Println("mapのテスト")
+	a := map[string]string{"a": "1"}
+	//f, _ := os.Create("test.txt")
+	println(a)
+	var a1 map[string]string
+	println(a1)
+
+	m := make(map[string]int)
+
+	fmt.Println(m)
+
+	m["key1"] = 10
+	m["key2"] = 20
+
+	fmt.Println(m)
+
+	//m1 := map[string]int{key1: 10, key2:20}
 
 	// makeで初期化するときに容量（キャパシティ）を指定する
 	// マップリテラルで初期化をする
