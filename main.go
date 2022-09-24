@@ -1,6 +1,6 @@
 package main
 
-import "myapp/defergo"
+import "myapp/object"
 
 type Test struct {
 	Title string
@@ -19,7 +19,7 @@ func main() {
 	//fmt.Println(*test2)
 	// 構造体を試す
 	//structs := structs.Structs{}
-	//_ = structs.Test()
+	//structs.Test()
 	//_ = literal.Test()
 	//_ = arrays.Test()
 	//_ = slices.Test()
@@ -41,7 +41,9 @@ func main() {
 	//_type.Test()
 	//json.Test()
 	//http.Test()
-	defergo.Test()
+	//defergo.Test()
+	//object.Isa()
+	object.Polymorphism()
 }
 
 //func (i int)Test1()  {
