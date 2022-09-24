@@ -1,6 +1,6 @@
 package main
 
-import "myapp/http"
+import "myapp/defergo"
 
 type Test struct {
 	Title string
@@ -41,7 +41,7 @@ func main() {
 	//_type.Test()
 	//json.Test()
 	//http.Test()
-	http.Test()
+	defergo.Test()
 }
 
 //func (i int)Test1()  {
