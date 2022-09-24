@@ -43,7 +43,8 @@ func main() {
 	//http.Test()
 	//defergo.Test()
 	//object.Isa()
-	object.Polymorphism()
+	//object.Polymorphism()
+	object.DuckTyping()
 }
 
 //func (i int)Test1()  {
