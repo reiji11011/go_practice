@@ -49,7 +49,11 @@ func main() {
 	//object.Inheritance()
 	//_interface.Test()
 	//_interface.MockTest()
-	di.Main()
+	//di.Main()
+	// わからなくなったからサンプルコードに学ぶ
+	//di.Sample()
+	//di.Sample2Main()
+	di.TddDi()
 }
 
 //func (i int)Test1()  {
