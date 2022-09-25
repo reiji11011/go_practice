@@ -13,6 +13,9 @@ type Cat struct {
 	Name string
 }
 
+type Duck struct {
+}
+
 // 構造体にインターフェースを埋め込む
 type Dog struct {
 	Name string
@@ -99,4 +102,13 @@ func Test() {
 	walker3.Walk()
 
 	// 構造体がインターフェースを満たしているかを確認する。
+	// ブランク識別子（_）によるダミー変数宣言を使って構造体がインターフェースを満たしていることを確認する。
+	var _ Walker = &Cat{}
+	var _ Walker = &Dog{}
+	// 以下はインターフェースを満たしていないのでエラーが表示される。
+	// Cannot use '&Duck{}' (type *Duck) as the type Walker Type does not implement 'Walker' as some methods are missing: Walk()
+	//var _ Walker = &Duck{}
+
+	// 構造体のフィールドをインターフェースにすることによって、モックで差し替えるようにする。
+
 }

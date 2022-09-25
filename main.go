@@ -1,8 +1,6 @@
 package main
 
-import (
-	_interface "myapp/interface"
-)
+import "myapp/di"
 
 type Test struct {
 	Title string
@@ -49,7 +47,9 @@ func main() {
 	//object.Polymorphism()
 	//object.DuckTyping()
 	//object.Inheritance()
-	_interface.Test()
+	//_interface.Test()
+	//_interface.MockTest()
+	di.Main()
 }
 
 //func (i int)Test1()  {
