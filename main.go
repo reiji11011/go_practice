@@ -1,6 +1,8 @@
 package main
 
-import "myapp/object"
+import (
+	_interface "myapp/interface"
+)
 
 type Test struct {
 	Title string
@@ -20,6 +22,7 @@ func main() {
 	// 構造体を試す
 	//structs := structs.Structs{}
 	//structs.Test()
+	//structs.Embedded()
 	//_ = literal.Test()
 	//_ = arrays.Test()
 	//_ = slices.Test()
@@ -44,7 +47,9 @@ func main() {
 	//defergo.Test()
 	//object.Isa()
 	//object.Polymorphism()
-	object.DuckTyping()
+	//object.DuckTyping()
+	//object.Inheritance()
+	_interface.Test()
 }
 
 //func (i int)Test1()  {
