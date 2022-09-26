@@ -11,6 +11,7 @@ func TestGreet(t *testing.T) {
 	buffer := bytes.Buffer{}
 
 	// Writerとして送信し、書き込まれた内容を記憶する。
+	// バッファーに書き込む。
 	Greet(&buffer, "太郎")
 
 	got := buffer.String()

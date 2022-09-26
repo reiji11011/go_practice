@@ -53,7 +53,8 @@ func main() {
 	// わからなくなったからサンプルコードに学ぶ
 	//di.Sample()
 	//di.Sample2Main()
-	di.TddDi()
+	//di.TddDiMain()
+	di.TddMockMain()
 }
 
 //func (i int)Test1()  {
